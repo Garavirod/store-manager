@@ -8,7 +8,8 @@ import { MaterialModule } from '../modules/material/material.module';
 import { DailysalesComponent } from './components/dailysales/dailysales.component';
 import { MonthlysalesComponent } from './components/monthlysales/monthlysales.component';
 import { AnnualsalesComponent } from './components/annualsales/annualsales.component';
-
+//highcharts
+import { HighchartsChartModule } from 'highcharts-angular';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { AnnualsalesComponent } from './components/annualsales/annualsales.compo
     CommonModule,
     ManagerRoutingModule,
     MaterialModule,
+    HighchartsChartModule,
   ]
 })
 export class ManagerModule { }

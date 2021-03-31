@@ -1,0 +1,14 @@
+div {    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    & > div{
+        margin: 20px;
+    }
+    
+    h4{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+}

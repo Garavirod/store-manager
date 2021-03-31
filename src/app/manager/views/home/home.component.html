@@ -1,11 +1,28 @@
 <div class="container-home">
     <div class="information">
-      <div>Daily Sales</div>
-      <div>Stuck status</div>
-      <div>Events calendar</div>
+      <!-- Daily sales -->
+      <mat-card>
+        <app-dailysales></app-dailysales>
+        <mat-card-actions>
+          <button mat-button>DETAILS</button>
+          <button mat-button>CLOSE BOX</button>
+        </mat-card-actions>
+      </mat-card>
+      <!-- Stok status -->
+      <mat-card>
+        Simple card
+        <mat-card-actions>
+          <button mat-button>DETAILS</button>          
+        </mat-card-actions>
+      </mat-card>
+      <mat-card>Simple card</mat-card>
     </div>
     <div class="charts">
-      <div>Monthly</div>
-      <div>Annual</div>
+      <mat-card>
+        <app-monthlysales></app-monthlysales>
+      </mat-card>
+      <mat-card>
+        <app-annualsales></app-annualsales>
+      </mat-card>
     </div>
 </div>

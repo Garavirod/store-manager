@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  sideBarOpen = false;
+  sideBarOpen = true;
 
   title = 'store-manager';
 
