@@ -10,10 +10,12 @@ import { MonthlysalesComponent } from './components/monthlysales/monthlysales.co
 import { AnnualsalesComponent } from './components/annualsales/annualsales.component';
 //highcharts
 import { HighchartsChartModule } from 'highcharts-angular';
+import { StockstatusComponent } from './components/stockstatus/stockstatus.component';
+import { EventsComponent } from './components/events/events.component';
 
 
 @NgModule({
-  declarations: [ProductosComponent, HomeComponent, DailysalesComponent, MonthlysalesComponent, AnnualsalesComponent],
+  declarations: [ProductosComponent, HomeComponent, DailysalesComponent, MonthlysalesComponent, AnnualsalesComponent, StockstatusComponent, EventsComponent],
   imports: [
     CommonModule,
     ManagerRoutingModule,
