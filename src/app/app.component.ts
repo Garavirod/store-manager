@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  sideBarOpen = false;
+
   title = 'store-manager';
+
+  sideBarToggler(e:any){
+    this.sideBarOpen = !this.sideBarOpen;
+  }
 }

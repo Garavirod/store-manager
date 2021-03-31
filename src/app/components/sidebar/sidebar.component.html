@@ -1,0 +1,32 @@
+<mat-nav-list>
+    <div class="profile-card">
+        <div class="header-card">
+            <h2>Username</h2>
+            <h4>example@gmail.com</h4>
+        </div>
+        <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="">
+    </div>
+    <mat-divider></mat-divider>
+    <h2 matSubheader>Content</h2>
+    
+    <a mat-list-item routerLinkactive="list-item-active" [routerLink]="[ 'manager/home' ]">
+        <mat-icon>home</mat-icon>
+        Home
+    </a>        
+    <a mat-list-item routerLinkactive="list-item-active" [routerLink]="[ 'manager/productos' ]">
+        <mat-icon>production_quantity_limits</mat-icon>
+        Productos</a>        
+    <a mat-list-item routerLinkactive="list-item-active" [routerLink]="[ '/' ]">
+        <mat-icon>point_of_sale</mat-icon>
+        Ventas</a>        
+    <a mat-list-item routerLinkactive="list-item-active" [routerLink]="[ '/' ]">
+        <mat-icon>list_alt</mat-icon>
+        Reportes</a>        
+    <a mat-list-item routerLinkactive="list-item-active" [routerLink]="[ '/' ]">
+        <mat-icon>store</mat-icon>
+        Almacen</a>            
+    <a mat-list-item routerLinkactive="list-item-active" [routerLink]="[ '/' ]">
+        <mat-icon>manage_accounts</mat-icon>
+        Adminstración</a>
+</mat-nav-list>
+

@@ -1,17 +1,10 @@
-<mat-toolbar color="primary" class="example-toolbar">  
-  <h1 class="example-app-name">Store Manager</h1>
-</mat-toolbar>
+<app-header (toggleSideBarEmmit)="sideBarToggler($event)"></app-header>
 <mat-drawer-container id="container" class="example-container">
-  <mat-drawer id="sidebar" mode="side" [opened]="true">
-    <a mat-raised-button [routerLink]="[ 'manager/home' ]">Home</a>        
-    <a mat-raised-button [routerLink]="[ 'manager/productos' ]">Productos</a>        
-    <a mat-raised-button [routerLink]="[ '/' ]">Ventas</a>        
-    <a mat-raised-button [routerLink]="[ '/' ]">Reportes</a>        
-    <a mat-raised-button [routerLink]="[ '/' ]">Almacen</a>            
-    <a mat-raised-button [routerLink]="[ '/' ]">Adminstración</a>        
-    <button class="btn-logout" mat-raised-button color="primary">Cerrar sesión</button> 
+  <mat-drawer id="sidebar" mode="side" [opened]="sideBarOpen">
+    <app-sidebar></app-sidebar>                 
   </mat-drawer>
   <mat-drawer-content id="main-render">
     <router-outlet></router-outlet>
   </mat-drawer-content>
 </mat-drawer-container>
+<app-footer></app-footer>

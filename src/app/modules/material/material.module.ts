@@ -7,6 +7,9 @@ import {MatListModule} from '@angular/material/list';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatCardActions, MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatIconModule} from '@angular/material/icon';
+import {MatMenuModule} from '@angular/material/menu';
 
 const material_components = [
   MatToolbarModule,
@@ -15,7 +18,10 @@ const material_components = [
   MatListModule,
   MatDividerModule,
   MatCardModule,
-  MatGridListModule,  
+  MatGridListModule,
+  FlexLayoutModule,  
+  MatIconModule,
+  MatMenuModule,
 ]
 
 @NgModule({
