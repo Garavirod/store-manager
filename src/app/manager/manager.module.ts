@@ -12,10 +12,11 @@ import { AnnualsalesComponent } from './components/annualsales/annualsales.compo
 import { HighchartsChartModule } from 'highcharts-angular';
 import { StockstatusComponent } from './components/stockstatus/stockstatus.component';
 import { EventsComponent } from './components/events/events.component';
+import { NewtaskdialogComponent } from './components/newtaskdialog/newtaskdialog.component';
 
 
 @NgModule({
-  declarations: [ProductosComponent, HomeComponent, DailysalesComponent, MonthlysalesComponent, AnnualsalesComponent, StockstatusComponent, EventsComponent],
+  declarations: [ProductosComponent, HomeComponent, DailysalesComponent, MonthlysalesComponent, AnnualsalesComponent, StockstatusComponent, EventsComponent, NewtaskdialogComponent],
   imports: [
     CommonModule,
     ManagerRoutingModule,

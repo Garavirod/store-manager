@@ -1,4 +1,14 @@
-<div class="mat-elevation-z8 task-list">
-    hello
+<div class="mat-elevation-z8 task-list">    
+    <mat-selection-list #shoes>
+        <cdk-virtual-scroll-viewport itemSize="50" class="example-viewport">
+            <div *cdkVirtualFor="let item of items; templateCacheSize: 0" class="example-item">
+                <mat-list-option>
+                  {{ item }}
+                </mat-list-option>
+            </div>
+        </cdk-virtual-scroll-viewport>
+        <button mat-raised-button color="primary">Clean marked</button>
+        <button mat-raised-button color="primary" (click)="openDialog()">Add new Task</button>            
+    </mat-selection-list>    
 </div>
 
