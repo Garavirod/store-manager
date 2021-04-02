@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewtaskdialogComponent implements OnInit {
 
-  constructor() { }
+  minDate:Date;
+
+  constructor() {
+    this.minDate = new Date();
+  }
 
   ngOnInit(): void {
   }

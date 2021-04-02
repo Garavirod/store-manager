@@ -18,6 +18,7 @@ import {ScrollingModule} from '@angular/cdk/scrolling';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 const material_components = [
   MatToolbarModule,
@@ -38,6 +39,7 @@ const material_components = [
   MatDatepickerModule,
   MatFormFieldModule,
   MatNativeDateModule,
+  MatInputModule,
 ]
 
 @NgModule({
