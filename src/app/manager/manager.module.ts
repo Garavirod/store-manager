@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ManagerRoutingModule } from './manager-routing.module';
-import { ProductosComponent } from './views/productos/productos.component';
 import { HomeComponent } from './views/home/home.component';
 import { MaterialModule } from '../modules/material/material.module';
 import { DailysalesComponent } from './components/dailysales/dailysales.component';
@@ -16,7 +15,7 @@ import { NewtaskdialogComponent } from './components/newtaskdialog/newtaskdialog
 
 
 @NgModule({
-  declarations: [ProductosComponent, HomeComponent, DailysalesComponent, MonthlysalesComponent, AnnualsalesComponent, StockstatusComponent, EventsComponent, NewtaskdialogComponent],
+  declarations: [HomeComponent, DailysalesComponent, MonthlysalesComponent, AnnualsalesComponent, StockstatusComponent, EventsComponent, NewtaskdialogComponent],
   imports: [
     CommonModule,
     ManagerRoutingModule,
