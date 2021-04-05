@@ -18,7 +18,8 @@
                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
                </button>
             </mat-form-field>
-
+            <!-- Not registered yet-->
+            <a  [routerLink]="[ '/auth/register' ]">I don't have an account</a>
             <button mat-raised-button color="primary">Login</button>
             <div class="auth__social-networks">                
                 <p>Or Sing in with Google</p>

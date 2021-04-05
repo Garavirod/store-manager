@@ -9,7 +9,11 @@
         form mat-form-field{
             width: 100%;
         }
-        form button{ width: 100%; }
+        form button{ width: 100%; margin-top: 10px; }
+        form a {            
+            
+            text-decoration: none;
+        }
     }
 }
 

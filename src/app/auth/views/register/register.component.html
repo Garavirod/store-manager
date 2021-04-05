@@ -1,1 +1,67 @@
-<p>register works!</p>
+<div class="container">
+    <mat-card>
+        <form action="">
+            <!-- Email -->
+            <mat-form-field appearance="fill">
+                <mat-label>Username</mat-label>
+                <input matInput>
+                <mat-error>
+                    Introduza una direacción de correo válida.
+                    <b>Considere que no se permiten los correos gmail o hotmail</b>
+                </mat-error>
+            </mat-form-field>
+            <!-- Correo -->
+            <mat-form-field appearance="fill">
+                <mat-label>Email</mat-label>
+                <input matInput>
+                <mat-error>
+                    Introduza una direacción de correo válida.
+                    <b>Considere que no se permiten los correos gmail o hotmail</b>
+                </mat-error>
+            </mat-form-field>
+            <!-- Password 1-->
+            <mat-form-field appearance="fill">
+                <mat-label>Enter your password</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'">
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                    [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </mat-form-field>
+            <!-- Password 2-->
+            <mat-form-field appearance="fill">
+                <mat-label>Verify password</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'">
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                    [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </mat-form-field>
+            <!-- Geneder -->
+            <mat-radio-group aria-label="Select an option">
+                <mat-radio-button value="F">Famle</mat-radio-button>
+                <mat-radio-button value="M">Male</mat-radio-button>
+                <mat-radio-button value="O">Other</mat-radio-button>
+            </mat-radio-group>
+
+            <!-- register button -->
+            <button mat-raised-button color="primary">Register</button>
+            <!-- Already registered -->
+            <a  [routerLink]="[ '/auth/login' ]">I have an account</a>
+            <!-- Registe gwith google -->
+            <div class="auth__social-networks">
+                <p>Or Sing up with Google</p>
+                <div class="google-btn">
+                    <div class="google-icon-wrapper">
+                        <img class="google-icon"
+                            src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+                            alt="google button" />
+                    </div>
+                    <p class="btn-text">
+                        <b>Sign up with google</b>
+                    </p>
+                </div>
+            </div>
+        </form>
+    </mat-card>
+</div>
