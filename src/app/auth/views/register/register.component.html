@@ -1,41 +1,29 @@
 <div class="container">
     <mat-card>
-        <form action="">
+        <form action="" autocomplete="off" [formGroup]="form" (ngSubmit)="register()">
             <!-- Email -->
             <mat-form-field appearance="fill">
                 <mat-label>Username</mat-label>
-                <input matInput>
+                <input matInput formControlName="username" type="text">
                 <mat-error>
-                    Introduza una direacción de correo válida.
-                    <b>Considere que no se permiten los correos gmail o hotmail</b>
+                    Set a valid username (at leat 8 characteres)
                 </mat-error>
             </mat-form-field>
             <!-- Correo -->
             <mat-form-field appearance="fill">
                 <mat-label>Email</mat-label>
-                <input matInput>
+                <input matInput formControlName="email" type="email">
                 <mat-error>
-                    Introduza una direacción de correo válida.
-                    <b>Considere que no se permiten los correos gmail o hotmail</b>
+                    Set a valid email                   
                 </mat-error>
-            </mat-form-field>
-            <!-- Password 1-->
+            </mat-form-field>            
+            <!-- password -->
             <mat-form-field appearance="fill">
-                <mat-label>Enter your password</mat-label>
-                <input matInput [type]="hide ? 'password' : 'text'">
-                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
-                    [attr.aria-pressed]="hide">
-                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-                </button>
-            </mat-form-field>
-            <!-- Password 2-->
-            <mat-form-field appearance="fill">
-                <mat-label>Verify password</mat-label>
-                <input matInput [type]="hide ? 'password' : 'text'">
-                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
-                    [attr.aria-pressed]="hide">
-                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-                </button>
+                <mat-label>Password</mat-label>
+                <input matInput formControlName="password" type="password">                
+                <mat-error>
+                   set a valid password (at least 8 characteres)
+                </mat-error>
             </mat-form-field>
             <!-- Geneder -->
             <mat-radio-group aria-label="Select an option">
@@ -45,9 +33,9 @@
             </mat-radio-group>
 
             <!-- register button -->
-            <button mat-raised-button color="primary">Register</button>
+            <button [disabled]="isValidForm()" mat-raised-button color="primary">Register</button>
             <!-- Already registered -->
-            <a  [routerLink]="[ '/auth/login' ]">I have an account</a>
+            <a [routerLink]="[ '/auth/login' ]">I have an account</a>
             <!-- Registe gwith google -->
             <div class="auth__social-networks">
                 <p>Or Sing up with Google</p>
