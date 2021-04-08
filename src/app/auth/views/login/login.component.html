@@ -1,26 +1,25 @@
 <div class="container">
     <mat-card>
-        <form action="">
+        <form action="" (ngSubmit)="login()" autocomplete="off" [formGroup]="formGroup">
             <!-- Correo -->
             <mat-form-field appearance="fill">
                <mat-label>Email</mat-label>
-               <input matInput>
+               <input matInput type="email" formControlName="email">
                <mat-error>
-                   Introduza una direacción de correo válida. 
-                   <b>Considere que no se permiten los correos gmail o hotmail</b>  
+                   Set a valid email
                </mat-error>                   
            </mat-form-field>
            <!-- Password -->
            <mat-form-field appearance="fill">
                <mat-label>Enter your password</mat-label>
-               <input matInput [type]="hide ? 'password' : 'text'">
-               <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-               <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-               </button>
+               <input matInput type="password" formControlName="password">
+               <mat-error>
+                    This field is required
+               </mat-error>               
             </mat-form-field>
             <!-- Not registered yet-->
             <a  [routerLink]="[ '/auth/register' ]">I don't have an account</a>
-            <button mat-raised-button color="primary">Login</button>
+            <button mat-raised-button color="primary" [disabled]="isValidForm()">Login</button>
             <div class="auth__social-networks">                
                 <p>Or Sing in with Google</p>
                 <div class="google-btn">
