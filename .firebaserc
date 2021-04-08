@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "store-manager-b4f95": {
+      "hosting": {
+        "store-manager": [
+          "store-manager-b4f95"
+        ]
+      }
+    }
+  }
+}

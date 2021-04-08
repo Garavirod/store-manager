@@ -8,7 +8,9 @@ import { MaterialModule } from './modules/material/material.module';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
-
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestore } from '@angular/fire/firestore';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -21,9 +23,10 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule,    
+    MaterialModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig)    
   ],
-  providers: [],
+  providers: [ AngularFirestore ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
