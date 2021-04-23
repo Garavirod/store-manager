@@ -18,7 +18,7 @@ export class MonthlysalesComponent implements OnInit {
           type: 'pie'
       },
       title: {
-          text: 'Historic and estimated sales in last three months'
+          text: 'Estimated sales in last three months'
       },
       tooltip: {
           pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
