@@ -18,7 +18,7 @@ export class MonthlysalesComponent implements OnInit {
           type: 'pie'
       },
       title: {
-          text: 'Browser market shares in January, 2018'
+          text: 'Historic and estimated sales in last three months'
       },
       tooltip: {
           pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
