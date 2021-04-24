@@ -20,6 +20,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatRadioModule } from '@angular/material/radio';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 const material_components = [
   MatToolbarModule,
@@ -42,6 +43,7 @@ const material_components = [
   MatNativeDateModule,
   MatInputModule,
   MatRadioModule,
+  MatProgressSpinnerModule,
 ]
 
 @NgModule({

@@ -1,0 +1,16 @@
+.filters{
+    display: flex;
+    justify-content: space-around;
+
+    mat-form-field{ width: 50%;}
+    .filters-btn{
+        width: 50%;
+        padding: 15px;        
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.table-container{
+    padding: 20px;
+}
