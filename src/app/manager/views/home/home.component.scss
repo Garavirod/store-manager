@@ -1,14 +1,13 @@
 .container-home{    
-    width: 100%;
-    height: 100vh;    
+    width: 100%;      
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;     
 
-    .information{         
+    .information{              
       width: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;      
+      justify-content: space-around;   
     }
 
     .charts{      
@@ -17,18 +16,13 @@
       justify-content: space-around;      
       width: 100%;
     }
-        
-    .information > mat-card {
-      margin: auto;
-      width: 80%;
-      height: 200px;
-      background-color: white;      
-    }
 
     .charts > mat-card {
-      margin: auto;
+      margin:auto;
+      margin-top: 10px;
       width: 80%;
-      height: 38%;
+      /* width: 80%;
+      height: 500px; */
       background-color: white;      
     }
 }
